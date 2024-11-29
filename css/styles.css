@@ -858,14 +858,14 @@ footer {
     }
 
     .header__nav-link {
-        font-size: 42px;
-        line-height: 48px;
+        font-size: 35px;
+        line-height: 40px;
 
     }
 
     .header__nav-get-in-touch {
-        font-size: 36px;
-        padding: 20px 36px;
+        font-size: 30px;
+        padding: 15px 30px;
     }
 
     .header__close-nav {
