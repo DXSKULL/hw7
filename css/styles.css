@@ -36,7 +36,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 50;
 }
 
 .header__container {
@@ -395,6 +395,155 @@ header {
     flex-shrink: 0;
 }
 
+/* Register  */
+.register {
+    margin-bottom: 200px;
+}
+
+.register__container {
+    box-shadow: 10px 10px 50px 3px #275C8D1A;
+    min-height: 370px;
+    border-radius: 12px;
+    background-color: #f2f2f2;
+}
+
+.register__title {
+    padding-top: 48px;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 48.4px;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px
+}
+
+.regiter_text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31.2px;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+}
+
+.register__form {
+    margin-top: 20px;
+    padding-bottom: 48px;
+}
+
+.register__inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register__input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.register__input {
+    width: 600px;
+    padding: 16px 32px;
+    font-size: 18px;
+    border: none;
+    border-radius: 16px;
+}
+
+.register__input.error {
+    outline: 2px solid #e42125;;
+}
+
+.register__error-text {
+    margin-top: 8px;
+    height: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 14px;
+    color: #e42125;
+}
+
+.register__label {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.regsiter__textarea-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.regsiter__textarea {
+    resize: none;
+    padding: 16px 32px;
+    height: 88px;
+    font-size: 18px;
+    border: none;
+    border-radius: 16px;
+}
+
+.regsiter__textarea.error {
+    outline: 2px solid #e42125;
+}
+
+.register__btn {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+    background-color: #0E6FFF;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+.modal {
+    display: none;
+    
+}
+
+.modal.opened {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__container {
+    background: white;
+    width: 400px;
+    height: 250px;
+    position: relative;
+}
+
+.modal__title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 48.4px;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.modal__text {
+    margin-bottom: 20px;
+}
+
+.modal__x {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-weight: 900;
+    
+    cursor: pointer;
+}
+
 /* Audit  */
 
 .audit {
@@ -615,6 +764,9 @@ header {
 /* Forest  */
 .forest {
     margin-bottom: 219px;
+    position: relative;
+    width: 1900px;
+    overflow: hidden;
 }
 
 .forest__line {
@@ -632,7 +784,13 @@ header {
 
 .forest__pic {
     position: relative;
+}
 
+.forest__pic-grid {
+    width: 300%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transition: 0.8s ease;
 }
 
 .forest__nav {

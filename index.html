@@ -20,6 +20,17 @@
 </head>
 
 <body>
+
+    <div class="modal">
+        <div class="modal__container">
+            <h5 class="modal__title">Form submitted</h5>
+            <p class="modal__text">Имя: Alex</p>
+            <p class="modal__text">Почта: example@mail.com</p>
+            <p class="modal__text">Сообщение: Test text submitted!</p>
+            <span class="modal__x">X</span>
+        </div>
+    </div>
+
     <!-- Header  -->
     <header>
         <div class="header__container">
@@ -151,7 +162,6 @@
                     <a class="testimonials__card-team">Experienced team</a>
                 </div>
             </div>
-
         </section>
 
         <!-- Features  -->
@@ -200,7 +210,6 @@
                     <div class="rectangle__line-pic">
                         <img src="./images/svg/line.svg" alt="line" class="rectangle__line-svg">
                     </div>
-
                     <div class="rectangle__box">
                         <div class="rectangle__captions">
                             <h3 class="rectangle__title">Lorem ipsum dolor sit amet</h3>
@@ -216,6 +225,44 @@
                 </div>
             </div>
         </section>
+
+        <!-- Register  -->
+        <section class="register">
+            <div class="container register__container">
+                <h3 class="register__title">
+                    Служба поддержки
+                </h3>
+
+                <p class="regiter_text">Если у вас возникли трудности по работе сайта, сложности в оплате или есть
+                    вопрос, вы можете обратиться в службу поддержки, мы обязательно вам поможем.</p>
+
+                <form class="register__form">
+                    <div class="register__inputs">
+                        <div class="register__input-container">
+                            <label class="register__label" for="text">Name: </label>
+                            <input class="register__input" type="text" name="" id="text" placeholder="Alex">
+                            <span class="register__error-text"></span>
+                        </div>
+                        
+                        <div class="register__input-container">
+                            <label class="register__label" for="email">Email: </label>
+                            <input class="register__input" type="email" name="" id="email" placeholder="example@emial.com">
+                            <span class="register__error-text"></span>
+                        </div>
+                    </div>
+
+                    <div class="regsiter__textarea-container">
+                        <label class="register__label" for="message">Message: </label>
+                        <textarea class="regsiter__textarea" name="" id="message" placeholder="Message..."></textarea>
+                        <span class="register__error-text"></span>
+                    </div>
+
+                    <button class="register__btn" type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+
+        
 
         <!-- Audit  -->
         <section class="audit" id="price">
@@ -359,20 +406,25 @@
             <div class="forest__container">
                 <span class="forest__line"></span>
                 <div class="forest__pic">
-                    <img src="./images/watch.jpg" alt="watch" class="forest__img">
-
-                    <div class="forest__nav">
-                        <div class="forest__arrow">
-                            <img src="./images/svg/arrow-left.svg" alt="arrow-left" class="forest__arrow-img">
-                        </div>
-                        <div class="forest__arrow">
-                            <img src="./images/svg/arrow-right.svg" alt="arrow-right" class="forest__arrow-img">
-                        </div>
+                    <div class="forest__pic-grid">
+                        <img src="./images/watch.jpg" alt="watch" class="forest__img">
+                        <img src="./images/watch1.jpg" alt="watch" class="forest__img">
+                        <img src="./images/watch2.jpg" alt="watch" class="forest__img">
                     </div>
 
 
-                </div>
 
+
+
+                </div>
+                <div class="forest__nav">
+                    <div class="forest__arrow">
+                        <img src="./images/svg/arrow-left.svg" alt="arrow-left" class="forest__arrow-img">
+                    </div>
+                    <div class="forest__arrow">
+                        <img src="./images/svg/arrow-right.svg" alt="arrow-right" class="forest__arrow-img">
+                    </div>
+                </div>
 
             </div>
         </section>
@@ -464,6 +516,8 @@
             </div>
         </div>
     </footer>
+
+    
     <script src="./js/main.js"></script>
 </body>
 
